@@ -1,0 +1,60 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/loginbackground"
+    android:gravity="center_vertical|bottom">
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/login"
+        android:layout_gravity="center_horizontal"
+        android:autoText="false"
+        android:padding="10dp"
+        android:background="@drawable/textbox"
+        android:inputType="text"
+        android:gravity="center_vertical"
+        android:hint="Username"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:background="@drawable/textbox"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:layout_above="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login"
+        android:background="#00ffffff"
+        android:layout_above="@+id/signupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:id="@+id/signupButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="#96303030" />
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.sunho207.netbuzz.Signup"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1"
+    android:id="@+id/test"
+    android:focusableInTouchMode="false"
+    android:baselineAligned="false">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_username"
+        android:hint="Username"
+        android:layout_span="2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/signup_password"
+        android:hint="Password"
+        android:layout_span="2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/signup_firstName"
+            android:layout_span="2"
+            android:hint="First Name" />
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/signup_lastName"
+            android:layout_span="2"
+            android:hint="Last Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/signup_email"
+            android:layout_span="2"
+            android:hint="GT Email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" @gatech.edu"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:id="@+id/textView4"
+            android:paddingRight="60dp"
+            android:paddingLeft="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_gender"
+            android:entries="@array/gender_array" />
+
+        <Spinner
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_year"
+            android:spinnerMode="dropdown"
+            android:entries="@array/year_array" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:id="@+id/textView5"
+        android:paddingTop="5dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/signup_birthday"
+        android:calendarViewShown="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major"
+        android:id="@+id/textView2"
+        android:paddingTop="5dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_major"
+        android:gravity="end"
+        android:spinnerMode="dropdown"
+        android:entries="@array/major_array"
+        android:paddingBottom="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/signup_submit"
+            android:layout_weight="0.46"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:id="@+id/signup_upload"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
